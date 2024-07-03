@@ -402,7 +402,7 @@ body {
   text-align: center;
 }
 
-.result__title-wrapper > h2 {
+.result__title {
   margin-bottom: 56px;
   font-size: 48px;
   font-weight: 700;
@@ -428,6 +428,14 @@ body {
   background-position: center top;
   background-size: 67px 56px;
   text-align: center;
+}
+
+.result__title {
+  margin-bottom: 56px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  color: white;
 }
 
 .result__item > p {
@@ -470,7 +478,7 @@ body {
     max-width: 499px;
     margin: 0 auto;
   }
-  .result__title-wrapper > h2 {
+  .result__title {
     margin-bottom: 48px;
     font-size: 32px;
     font-weight: 700;

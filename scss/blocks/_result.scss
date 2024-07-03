@@ -10,7 +10,7 @@
 .result__title-wrapper {
     text-align: center;
 }
-.result__title-wrapper > h2{
+.result__title{
     @include textStyle($FS:48px, $FW:700, $LH:48px, $MB:56px, $CLR:$white-color);
 }
 .result__title-wrapper > h2 > span{
@@ -26,6 +26,9 @@
     background-position: center top;
     background-size: 67px 56px;
     text-align: center;
+}
+.result__title{
+    @include textStyle($FS:48px, $FW:700, $LH:48px, $MB:56px, $CLR:$white-color);
 }
 .result__item > p{
     padding-top: 36px;
@@ -55,7 +58,7 @@
         max-width: 499px;
         margin: 0 auto;
     }
-    .result__title-wrapper > h2{
+    .result__title{
         @include textStyle($FS:32px, $FW:700, $LH:32px, $MB:48px, $CLR:$white-color);
     }
     .result__list {
