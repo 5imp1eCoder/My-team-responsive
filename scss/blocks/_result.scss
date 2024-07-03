@@ -1,0 +1,82 @@
+.result-section {
+    padding: 140px 0;
+    background-image: url(../../images/result-img1.svg),
+    url(../../images/result-img2.svg);
+    background-color: $zafar-4047;
+    background-repeat: no-repeat;
+    background-size: 147px 100px , 200px 100px;
+    background-position: left top, right bottom;
+}
+.result__title-wrapper {
+    text-align: center;
+}
+.result__title-wrapper > h2{
+    @include textStyle($FS:48px, $FW:700, $LH:48px, $MB:56px, $CLR:$white-color);
+}
+.result__title-wrapper > h2 > span{
+    color: $light-green;
+}
+.result__list {
+    @include display($items:start, $space:space-between, $gap:10px);
+}
+.result__item {
+    width: 350px;
+    background-image: url(../../images/li-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 67px 56px;
+    text-align: center;
+}
+.result__item > p{
+    padding-top: 36px;
+    @include textStyle($FS:15px, $FW:600, $LH:25px, $MB:24px, $CLR:$white-color);
+}
+.result__item > strong{
+    display: block;
+    @include textStyle($FS:18px, $FW:700, $LH:28px, $MB:2px, $CLR:$light-green);
+}
+.result__item > span{
+    display: block;
+    @include textStyle($FS:13px, $FW:600, $LH:25px, $MB:18px, $CLR:$white-color);
+    font-style: italic;
+}
+
+
+// tablet start
+@media only screen and (max-width:860px){
+    .result-section {
+        padding: 100px 0;
+    }
+    .result{
+        max-width: 573px;
+        margin: 0 auto;
+    }
+    .result__title-wrapper{
+        max-width: 499px;
+        margin: 0 auto;
+    }
+    .result__title-wrapper > h2{
+        @include textStyle($FS:32px, $FW:700, $LH:32px, $MB:48px, $CLR:$white-color);
+    }
+    .result__list {
+        flex-direction: column;
+        @include display($items:center, $space:start, $gap:48px);
+    }
+    .result__item {
+        width: 100%;
+    }
+    .result__item > p , .result__item > span{
+        margin-bottom: 16px;
+    }
+}
+// tablet end
+
+// mobile start
+@media only screen and (max-width:600px){
+    .result-section {
+        padding: 140px 0 164px;
+    }
+    .result{
+        max-width: 327px;
+    }
+}
