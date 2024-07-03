@@ -12,6 +12,8 @@
 }
 .result__title{
     @include textStyle($FS:48px, $FW:700, $LH:48px, $MB:56px, $CLR:$white-color);
+    text-align: center;
+    // padding: 0 254px 0 0;
 }
 .result__title-wrapper > h2 > span{
     color: $light-green;

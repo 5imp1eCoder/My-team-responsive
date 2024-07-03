@@ -408,6 +408,7 @@ body {
   font-weight: 700;
   line-height: 48px;
   color: white;
+  text-align: center;
 }
 
 .result__title-wrapper > h2 > span {
